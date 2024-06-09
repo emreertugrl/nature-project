@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Project</title>
+    <!-- bs link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- css -->
+    <style>
+      html,
+      body {
+        height: 90vh;
+        background-image: linear-gradient(to right, green, blue);
+      }
+      .form-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><h2>DOĞA</h2></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >ANASAYFA</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="sign.html">GİRİŞ YAP</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Arama Yapınız.."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">Ara</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- ana içerik -->
+    <div class="container form-container">
+      <form class="rounded-3 text-light border p-4 shadow">
+        <div class="my-3">
+          <label for="email" class="form-label">Email Adresiniz:</label>
+          <input type="email" class="form-control" name="email" id="email" />
+        </div>
+        <div class="form-text text-light">
+          Bilgilerinizi kimseyle paylaşmayacağız.
+        </div>
+        <div class="my-3">
+          <label for="password" class="form-label">Şifreniz:</label>
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            id="password"
+          />
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            class="form-chechbox"
+            name="checkbox"
+            id="checkbox"
+          />
+          <label for="checkbox" class="form-label">Beni Hatırla</label>
+        </div>
+        <button type="button" class="btn btn-primary">Gönder</button>
+      </form>
+    </div>
+    <!-- footer -->
+    <div class="container text-light mt-2 p-5 border-top mx-auto">
+      <footer class="d-sm-flex justify-content-between">
+        <p>2024 &copy;Tüm Hakları Saklıdır.</p>
+        <div class="gap-5 d-sm-flex">
+          <a class="nav-link" href="index.html">ANASAYFA</a>
+          <a class="nav-link" href="blog.html">BLOG</a>
+          <a class="nav-link" href="sign.html">GİRİŞ YAP</a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- bs js link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

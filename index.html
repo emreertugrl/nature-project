@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Project</title>
+    <!-- bs link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- css -->
+    <style>
+      .carousel-item {
+        height: 50vh;
+        background-position: center;
+        background-size: cover;
+      }
+      .car-img {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><h2>DOĞA</h2></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >ANASAYFA</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sign.html">GİRİŞ YAP</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Arama Yapınız.."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">Ara</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- ana içerik -->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/natureproject/images/banner1.jpg"
+            class="d-block w-100 car-img"
+            alt="..."
+          />
+          <div class="carousel-caption d-md-block">
+            <h5>BİZE KATIL</h5>
+            <a href="/natureproject/sign.html" class="btn btn-success"
+              >ŞİMDİ KAYDOL</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/natureproject/images/banner2.jpg"
+            class="d-block w-100 car-img"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-none">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/natureproject/images/banner3.jpg"
+            class="d-block w-100 car-img"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-none">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- neler göreceksiniz? -->
+    <section>
+      <div class="container p-lg-4">
+        <h2 class="border-bottom p-2">Neler Göreceksiniz?</h2>
+        <div class="row p-2">
+          <!-- birinci col -->
+          <div class="col-12 col-md">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  class="img-fluid"
+                  src="/natureproject/images/bookmark.png"
+                  alt="bookmark"
+                />
+              </div>
+              <div class="col-10">
+                <h2>Seyahat Rehberleri</h2>
+                <p>
+                  Farklı ülkeler ve şehirler hakkında seyahat rehberleri
+                  sunuyoruz. Seyahat ederken dikkat etmeniz gerekenler hakkında
+                  bilgiler. En popüler turistik yerleri ve gizli saklı kalmış
+                  yerleri keşfetmenize yardımcı olacak önerilerimiz var.
+                </p>
+                <a href="#" class="btn btn-primary">Devamını Oku</a>
+              </div>
+            </div>
+          </div>
+          <!-- ikinci col -->
+          <div class="col-md">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  class="img-fluid"
+                  src="/natureproject/images/location.png"
+                  alt="location"
+                />
+              </div>
+              <div class="col-10">
+                <h2>Doğa Yürüyüşleri</h2>
+                <p>
+                  Harika doğa yürüyüşleri için en iyi rotalar ve parklar
+                  hakkında bilgiler. Yürüyüşlerde ihtiyaç duyabileceğiniz
+                  malzemeler hakkında öneriler. Doğa yürüyüşleri sırasında doğal
+                  yaşamı korumak için alabileceğiniz önlemler.
+                </p>
+                <a href="#" class="btn btn-primary">Devamını Oku</a>
+              </div>
+            </div>
+          </div>
+          <!-- üçüncü col -->
+          <div class="col-md">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  class="img-fluid"
+                  src="/natureproject/images/Chat.png"
+                  alt="bookmark"
+                />
+              </div>
+              <div class="col-10">
+                <h2>Doğa Fotoğrafçılığı</h2>
+                <p>
+                  Doğal güzellikleri yakalamanızı sağlayacak doğa fotoğrafçılığı
+                  ipuçları. Doğal manzaraların yanı sıra doğal yaşamı
+                  fotoğraflama teknikleri. En iyi fotoğraf makineleri ve
+                  ekipmanlar hakkında bilgiler.
+                </p>
+                <a href="#" class="btn btn-primary">Devamını Oku</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- bilgi bölümü -->
+    <section>
+      <div class="container">
+        <div class="row p-4 bg-light mx-1 my-2 rounded-4">
+          <!-- col-1  -->
+          <div class="col-9 p-4">
+            <h1 class="fw-bold">Sürdürülebilir Seyahet</h1>
+            <p class="fs-4">
+              Seyahat ederken sürdürülebilir turizmin önemini vurgulayan
+              yazılar. Doğal alanların ve çevrenin korunmasını sağlamak için
+              alabileceğiniz önlemler. Seyahat ederken karbon ayak izinizi nasıl
+              azaltabileceğiniz hakkında bilgiler.
+            </p>
+            <a href="#" class="btn btn-primary btn-lg">İlerle</a>
+          </div>
+          <!-- col-1 bitiş -->
+        </div>
+        <!-- row-2 -->
+        <div class="row gap-4 my-4 mx-1">
+          <!-- col-2  -->
+          <div class="col-12 col-md bg-dark text-light p-5 rounded-4">
+            <h2>Doğal Malzemeler ve Ürünler</h2>
+            <p>
+              Doğanın sağlık üzerindeki faydalarını vurgulayan yazılar. Doğal
+              tedavi yöntemleri ve doğal besin takviyeleri hakkında bilgiler.
+              Doğal ortamlarda meditasyon ve yoga yapmanın sağlık ve refah
+              üzerindeki faydaları hakkında bilgiler.
+            </p>
+            <a href="#" class="btn btn-outline-light">İlerle</a>
+          </div>
+          <!-- col-2 bitiş -->
+          <!-- col-3  -->
+          <div class="col-12 col-md bg-light p-5 rounded-4">
+            <h2>Sürdürülebilir Seyahet</h2>
+            <p>
+              Doğanın sağlık üzerindeki faydalarını vurgulayan yazılar. Doğal
+              tedavi yöntemleri ve doğal besin takviyeleri hakkında bilgiler.
+              Doğal ortamlarda meditasyon ve yoga yapmanın sağlık ve refah
+              üzerindeki faydaları hakkında bilgiler.
+            </p>
+            <a href="#" class="btn btn-outline-dark">İlerle</a>
+          </div>
+          <!-- col-3 bitiş -->
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <div class="container mt-2 p-5 border-top mx-auto">
+      <footer class="d-sm-flex justify-content-between">
+        <p>2024 &copy;Tüm Hakları Saklıdır.</p>
+        <div class="gap-5 d-sm-flex">
+          <a class="nav-link" href="index.html">ANASAYFA</a>
+          <a class="nav-link" href="blog.html">BLOG</a>
+          <a class="nav-link" href="sign.html">GİRİŞ YAP</a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- bs js link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
